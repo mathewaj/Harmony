@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   View
 } from 'react-native';
+import Video from 'react-native-video';
 
 export default class HarmonyApp extends Component {
   render() {
@@ -21,6 +22,7 @@ const TrackScrollingView = () => {
   var _scrollView: ScrollView;
   return (
     <View style={styles.window}>
+      <Video source={{uri: "https://api.soundcloud.com/tracks/254196631/stream?client_id=8a754483a114344c70ab15f20a5035ab" }}/>
       <ScrollView
         horizontal={true}
         ref={(scrollView) => { _scrollView = scrollView; }}>
